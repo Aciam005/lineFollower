@@ -1,22 +1,18 @@
-# lineFollower.Main
+### **Autonomous Line Follower Robot**
 
-Iată o descriere profesională a proiectului, structurată special pentru a evidenția competențele tehnice în fața unui recrutor:
+**General Description:**
+Development of an autonomous embedded system capable of identifying and following a track marked by a black line, using the Arduino platform. The project integrates DC motor control with analog sensor signal processing to ensure precise real-time navigation.
 
-### **Robot Autonom Line Follower**
+**Responsibilities and Technical Achievements:**
 
-**Descriere Generală:**
-Dezvoltarea unui sistem embedded autonom capabil să identifice și să urmărească un traseu marcat printr-o linie neagră, utilizând platforma Arduino. Proiectul integrează controlul motoarelor de curent continuu cu procesarea semnalelor de la senzori analogici pentru a asigura o navigare precisă în timp real.
+* **Sensor Integration and Calibration:** Implementation of a data acquisition subsystem using the **QTRSensors** library for two analog sensors. I developed an automatic calibration routine (400 iterations) to ensure the robot's adaptability to various lighting and contrast conditions.
+* **Control and Navigation Algorithm:** Designing decision logic that interprets sensor values (on a scale of 0 to 1000) to determine the optimal travel direction: forward, left, or right.
+* **Motor Control (PWM):** Managing the propulsion system through **PWM (Pulse Width Modulation)** signals for speed control, allowing smooth transitions between forward movement and steering maneuvers.
+* **Diagnosis and Feedback System:** Implementation of a debugging interface via Serial communication and visual feedback through LEDs for monitoring sensor status and movement direction during testing.
+* **Code Efficiency:** Utilizing enumerated data types (`enum`) and modular function structuring to ensure readable and maintainable code.
 
-**Responsabilități și Realizări Tehnice:**
+**Technologies Used:**
 
-* **Integrarea și Calibrarea Senzorilor:** Implementarea unui subsistem de achiziție de date utilizând biblioteca **QTRSensors** pentru doi senzori analogici. Am dezvoltat o rutină de calibrare automată (400 de iterații) pentru a asigura adaptabilitatea robotului la diverse condiții de iluminare și contrast.
-* **Algoritm de Control și Navigație:** Proiectarea unei logici de decizie care interpretează valorile senzorilor (pe o scară de la 0 la 1000) pentru a determina direcția optimă de deplasare: înainte, stânga sau dreapta.
-* **Controlul Motoarelor (PWM):** Gestionarea sistemului de propulsie prin semnale **PWM (Pulse Width Modulation)** pentru controlul vitezei, permițând tranziții line între mersul înainte și manevrele de virare.
-* **Sistem de Diagnoză și Feedback:** Implementarea unei interfețe de debugging prin comunicare Serială și feedback vizual prin LED-uri pentru monitorizarea stării senzorilor și a direcției de mișcare în timpul testării.
-* **Eficientizarea Codului:** Utilizarea tipurilor de date enumerate (`enum`) și structurarea modulară a funcțiilor pentru a asigura un cod lizibil și ușor de întreținut.
-
-**Tehnologii Utilizate:**
-
-* **Limbaj:** C++ (Arduino Sketch).
-* **Hardware:** Microcontroler compatibil Arduino, senzori analogici QTR, drivere de motor DC, LED-uri de stare.
-* **Concepte:** Control în buclă deschisă, procesare de semnal, sisteme de timp real, calibrare senzori.
+* **Language:** C++ (Arduino Sketch).
+* **Hardware:** Arduino-compatible microcontroller, QTR analog sensors, DC motor drivers, status LEDs.
+* **Concepts:** Open-loop control, signal processing, real-time systems, sensor calibration.
